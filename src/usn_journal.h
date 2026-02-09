@@ -12,6 +12,14 @@
 #include <filesystem>
 #include "types.h"
 
-void getHandleToVol(HANDLE& volHandle);
+HANDLE openVolume(const wstring& volPath);
+
+int queryJournal(HANDLE volume, USN_JOURNAL_DATA& journalData, DWORD& bytesReturned);
+
+void loadLastUsn(string fileName, DWORDLONG& lastUsn);
+
+void saveLastUsn(string fileName, DWORDLONG& lastUsn);
+
+void readJournalSince(HANDLE& volume, USN_JOURNAL_DATA& journal, DWORDLONG& lastUsn, const fs::path volPath);
 
 #endif /* USN_JOURNAL_H_ */

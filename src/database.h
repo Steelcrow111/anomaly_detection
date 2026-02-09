@@ -9,7 +9,8 @@
 #define DATABASE_H_
 
 #include <string>
-#include <cstdint>
+#include "sqlite3.h"
 
+int initDatabase(const std::string& fileName, sqlite3*& db);
 
 #endif /* DATABASE_H_ */

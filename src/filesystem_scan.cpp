@@ -9,7 +9,6 @@
 #include <iostream>
 
 #include "filesystem_scan.h"
-#include "types.h"
 
 using namespace std;
 namespace fs = std::filesystem;

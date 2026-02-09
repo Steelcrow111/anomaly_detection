@@ -32,9 +32,9 @@ struct FileID  {
 };
 
 struct FSItem {
-	ItemType type;
 	wstring fileName;
-	wstring fullPath;
+	ItemType type;
+	fs::path fullPath;
 	FILETIME LastAccessTime;
 	FILETIME LastWriteTime;
 	DWORD attributes;
