@@ -8,6 +8,10 @@
 #ifndef USN_JOURNAL_H_
 #define USN_JOURNAL_H_
 
+#include <windows.h>
+#include <filesystem>
+#include "types.h"
 
+void getHandleToVol(HANDLE& volHandle);
 
 #endif /* USN_JOURNAL_H_ */

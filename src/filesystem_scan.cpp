@@ -4,12 +4,11 @@
  *  Created on: 9 Feb 2026
  *      Author: fionn
  */
-#include <iostream>
-#include <windows.h>
-#include <string>
-#include <vector>
-#include <filesystem>
 
+#include <windows.h>
+#include <iostream>
+
+#include "filesystem_scan.h"
 #include "types.h"
 
 using namespace std;

@@ -6,16 +6,16 @@
 // Description : Hello World in C++, Ansi-style
 //============================================================================
 
+
+
 #include <iostream>
-#include <windows.h>
-#include <winioctl.h>
-#include <Timezoneapi.h>
-#include <string>
-#include <vector>
 #include <filesystem>
 #include <fstream>
 
+#include "usn_journal.h"
 #include "filesystem_scan.h"
+#include "database.h"
+#include "types.h"
 
 using namespace std;
 namespace fs = std::filesystem;
@@ -32,17 +32,7 @@ FILE_ID_DESCRIPTOR getFileIdDescriptor(const DWORDLONG fileId)
     return fileDescriptor;
 }
 
-void getHandleToVol(HANDLE& volHandle){
-	volHandle = CreateFileW(
-			L"\\\\.\\D:",
-			GENERIC_READ | GENERIC_WRITE,
-			FILE_SHARE_READ | FILE_SHARE_WRITE | FILE_SHARE_DELETE	,
-			nullptr,
-			OPEN_EXISTING,
-			0,
-			nullptr
-		);
-}
+
 
 
 int main() {

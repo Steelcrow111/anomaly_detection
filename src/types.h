@@ -9,6 +9,13 @@
 #define TYPES_H_
 
 
+#include <windows.h>
+#include <string>
+#include <vector>
+#include <filesystem>
+#include <memory>
+
+namespace fs = std::filesystem;
 
 using namespace std;
 

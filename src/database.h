@@ -8,6 +8,8 @@
 #ifndef DATABASE_H_
 #define DATABASE_H_
 
+#include <string>
+#include <cstdint>
 
 
 #endif /* DATABASE_H_ */
